@@ -1,0 +1,261 @@
+/* Mobile First (phones, phabelts, tablets) styles go here */
+
+:root {
+    --bar-length: 1.6rem;
+    --bar-width: 0.2rem;
+    --font-styled: 'Gabriela', serif;
+    --font-normal: 'Inter', sans-serif;
+    --header-bg: #290C2E;
+    --header-bg-fade: rgba(41, 12, 46, 0.8);
+    --header-fg: white;
+
+    background: var(--header-bg);
+    font-family: var(--font-normal);
+}
+
+html, body, #root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#menu {
+    align-items: center;
+    background-color: var(--header-bg-fade);
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    opacity: 0;
+    top: 8vh;
+    transform: translate(0, -100vh);
+    transition: 300ms ease-in-out;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+}
+
+#menu.active {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+#menu > #search-container {
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    height: 2.4rem;
+    justify-content: center;
+    max-width: 30rem;
+    width: 70%;
+}
+
+#menu > #search-container > input {
+    border: none;
+    height: 2rem;
+    max-width: 30rem;
+    width: 90%;
+}
+
+#menu > #search-container > input:focus {
+    outline: none;
+}
+
+#menu > * {
+    position: absolute;
+    top: 5rem;
+}
+
+#menu > ul {
+    list-style: none;
+    padding: 0;
+    top: 10rem;
+    width: 90%;
+}
+
+#menu > ul > * {
+    margin-bottom: 0.9rem;
+    margin-top: 0.9rem;
+    opacity: 0.7;
+}
+
+
+#menu > ul > li > a {
+    color: white;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+#menu > ul > li > a:hover {
+    opacity: 1;
+}
+
+header {
+    align-items: center;
+    background-color: var(--header-bg);
+    display: flex;
+    height: 8vh;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+header.active > h2 > a {
+    font-size: 2.5rem;
+}
+
+header.active > #cart {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+header.active > #hamburger > .bar:nth-child(1) {
+    transform: rotate(45deg) translate(0, 0.55rem);;
+}
+
+header.active > #hamburger > .bar:nth-child(2) {
+    transform: rotate(-45deg) translate(0, -0.55rem);
+}
+
+#hamburger {
+    align-items: center;
+    background-color: var(--header-bg);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: calc(var(--bar-length) + 1rem);
+    justify-content: center;
+    margin-left: 1.5rem;
+    margin-right: auto;
+    transition: 300ms;
+    width: calc(var(--bar-length) + 1rem);
+}
+
+#hamburger:hover {
+    opacity: 0.8;
+}
+
+#hamburger > .bar {
+    background-color: var(--header-fg);
+    border-radius: 20px;
+    height: var(--bar-length);
+    position: relative;
+    transition: 300ms;
+    width: var(--bar-width);
+}
+
+#hamburger > .bar:nth-child(1) {
+    bottom: 0.4rem;
+    left: 0.1rem;
+    transform: rotate(90deg);
+}
+
+#hamburger > .bar:nth-child(2) {
+    right: 0.1rem;
+    top: 0.4rem;
+    transform: rotate(-90deg);
+}
+
+header > h2 > a {
+    color: var(--header-fg);
+    font-family: var(--font-styled);
+    font-size: 3rem;
+    left: 1.5rem;
+    position: relative; 
+    text-decoration: none;
+    transition: 300ms;
+}
+
+header > #cart {
+    align-items: center;
+    display: flex;
+    height: 3rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    position: relative;
+    transition: 300ms;
+}
+
+#cart > #cart-count {
+    align-items: center;
+    display: flex;
+    height: 2rem;
+    left: 1rem;
+    position: relative;
+    width: 3rem;
+}
+
+#cart-count > #count {
+    align-items: center;
+    border: 1px solid var(--header-fg);
+    border-radius: 15%;
+    display: flex;
+    font-size: 0.6rem;
+    height: 1rem;
+    justify-content: center;
+    width: 1rem;
+}
+
+#count > p {
+    color: var(--header-fg);
+    font-size: 0.6rem;
+}
+
+#cart-count > #triangle {
+    display: flex;
+    height: 0.6rem;
+    width: 1.2rem;
+}
+
+#triangle > .bar {
+    background-color: var(--header-fg);
+    height: 0.55rem;
+    width: 0.06rem;
+}
+
+#triangle > .bar:nth-child(1) {
+    left: 0.2rem;
+    position: relative;
+    transform: rotate(-78deg);
+}
+
+#triangle > .bar:nth-child(2) {
+    left: 0.16rem;
+    position: relative;
+    top: 0.14rem;
+    transform: rotate(78deg);
+}
+
+#triangle > #left-bar {
+    height: 0.6rem;
+}
+
+#cart > img {
+    bottom: 0.2rem;
+    height: 2.4rem;
+    position: relative;
+}
+
+footer {
+    background-color: black;
+}
+
+footer * {
+    color: white;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@import './home.css';
+@import './shop.css';
+
+
+
+/* Reflection - what did this accomplish? */ 

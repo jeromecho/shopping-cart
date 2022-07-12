@@ -1,0 +1,53 @@
+#home {
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    width: 100%;
+}
+
+#home * {
+    color: var(--header-fg);
+    position: relative;
+    top: 30%;
+}
+
+#overlay {
+    background-color: var(--header-bg);
+    height: 92vh;
+    opacity: 0.3;
+    position: fixed;
+    top: 8vh;
+    width: 100%;
+}
+
+#home > h1 {
+    font-family: var(--font-styled);
+    font-size: 4rem;
+    text-align: center;
+    width: 70%;
+}
+
+#home > button {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    font-size: 1.8rem;
+    height: 3.5rem;
+    letter-spacing: 0.1rem;
+    width: 8rem;
+}
+
+#home > p {
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

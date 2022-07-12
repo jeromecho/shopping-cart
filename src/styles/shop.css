@@ -1,0 +1,92 @@
+#shop {
+    --title-content-bg: #610C63;
+    --main-img-bg: #FFF9D7;
+    --items-content-bg: #810955;
+
+    height: fit-content;
+}
+
+#shop * {
+    color: white;
+}
+
+#title-content {
+    align-items: center;
+    background-color: var(--title-content-bg);
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#title-content > #title-container {
+    width: 80%;
+}
+
+#title-container > h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+#title-container > p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+#img-container {
+    align-items: center;
+    background-color: var(--main-img-bg);
+    display: flex;
+    height: 40vh;
+    justify-content: center;
+    width: 100%;
+}
+
+#img-container > img {
+    height: 90%;
+}
+
+#filter {
+    align-items: center;
+    background-color: var(--items-content-bg);
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+}
+
+#filter > * {
+    background-color: var(--items-content-bg);
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+#filter > .container {
+    align-items: flex-start;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    width: fit-content;
+}
+
+#filter > .container > * {
+    background-color: var(--items-content-bg);
+    border: none;
+}
+
+#filter > .container > hr {
+    background-color: white;
+    height: 0.1rem;
+    width: 2rem;
+}
+
+#gallery {
+}
+
+
+
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
