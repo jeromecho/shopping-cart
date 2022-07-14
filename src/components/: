@@ -1,0 +1,59 @@
+#item {
+    align-items: center;
+    background-color: var(--title-content-bg);
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#item * {
+    color: white;
+}
+
+#item > .container {
+    height: 80vw;
+    max-height: 30rem;
+    max-width: 40rem;
+    width: 80vw;
+}
+
+#item > .container > h1 {
+    font-weight: 300;
+    letter-spacing: 0.3rem;
+}
+
+#item > .container > .container {
+    align-items: center;
+    background-color: var(--main-img-bg);
+    display: flex;
+    height: 60vw;
+    justify-content: center;
+    max-height: 30rem;
+    max-width: 40rem;
+    width: 80vw;
+}
+
+#item > .container > .container > img {
+    width: 90%;
+}
+
+#item > button {
+    height: 2.5rem;
+    width: 15rem;
+}
+
+/*
+
+--title-cntent-bg
+--main-img-bg
+--items-content-bg - light, bright purple 
+--header-bg for top button
+
+*/
+
+
+
+
+

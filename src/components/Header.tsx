@@ -25,19 +25,19 @@ const Header: React.FunctionComponent<HeaderProps> = () => {
                 <input id='search' placeholder={`Search for what's in`} />
             </label>
             <ul>
-                <li><Link to='/shop'>Shop</Link></li>
+                <li><Link onClick={handleClick} to='/shop'>Shop</Link></li>
                 <hr />
-                <li><Link to='/*'>Legal</Link></li>
+                <li><Link onClick={handleClick} to='/*'>Legal</Link></li>
                 <hr />
-                <li><Link to='/*'>Media</Link></li>
+                <li><Link onClick={handleClick} to='/*'>Media</Link></li>
                 <hr />
-                <li><Link to='/*'>Auction</Link></li>
+                <li><Link onClick={handleClick} to='/*'>Auction</Link></li>
                 <hr />
-                <li><Link to='/*'>About Esmé</Link></li>
+                <li><Link onClick={handleClick} to='/*'>About Esmé</Link></li>
                 <hr />
-                <li><Link to='/*'>Orphans Program</Link></li>
+                <li><Link onClick={handleClick} to='/*'>Orphans Program</Link></li>
                 <hr />
-                <li><Link to='/*'>Contact</Link></li>
+                <li><Link onClick={handleClick} to='/*'>Contact</Link></li>
                 <hr />
             </ul>
         </div>

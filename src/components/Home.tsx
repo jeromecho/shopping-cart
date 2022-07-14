@@ -1,5 +1,6 @@
 import type { ReactElement } from "react"
 import BGIMG from '../img/cocktail.png';
+import { Link } from 'react-router-dom';
 
 export interface HomeProps {
 
@@ -14,7 +15,7 @@ export function Home(props: HomeProps): ReactElement {
         }}>
             <h1>Ready to be 'In'?</h1>
             <h3>The largest selection on 'In' items in North America</h3>
-            <button>SHOP</button> 
+            <Link to='/shop'><button>SHOP</button></Link>
             <p>*All proceeds charitably donated to Esme Squalor</p>
         </main>
     </>

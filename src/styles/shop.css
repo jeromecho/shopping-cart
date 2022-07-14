@@ -2,7 +2,10 @@
     --title-content-bg: #610C63;
     --main-img-bg: #FFF9D7;
     --items-content-bg: #810955;
-
+    --item-bg: white;
+    --item-fg: black;
+    --item-fg-fade: rgba(0, 0, 0, 0.7);
+    --border-fg: #C9B3B3;
     height: fit-content;
 }
 
@@ -55,35 +58,125 @@
     justify-content: center;
 }
 
-#filter > * {
-    background-color: var(--items-content-bg);
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
 #filter > .container {
     align-items: flex-start;
+    background-color: var(--items-content-bg);
     display: flex;
     height: fit-content;
     flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
     width: fit-content;
 }
 
 #filter > .container > * {
     background-color: var(--items-content-bg);
     border: none;
+    font-weight: 500;
 }
 
-#filter > .container > hr {
+#filter > .container > button {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+#filter > .container > button:hover {
+    opacity: 1;
+}
+
+#filter > .container > button:hover + .bar {
+    opacity: 1;
+    transform: translate(0.1rem, 0);
+}
+
+#filter > .container > .bar {
     background-color: white;
+    border-radius: 15px;
     height: 0.1rem;
+    left: 0.3rem;
+    opacity: 0;
+    position: relative;
+    transform: translate(-2rem, 0);
+    transition: 300ms;
     width: 2rem;
 }
 
 #gallery {
+    background-color: var(--items-content-bg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#gallery > a > .item {
+    align-items: center;
+    background-color: var(--item-bg);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    height: 40vw;
+    justify-content: center;
+    margin: 1rem;
+    max-height: 20rem;
+    max-width: 20rem;
+    width: 40vw;
+}
+
+#gallery > a > .item > * {
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    top: 14%;
+}
+
+#gallery > a > .item > img {
+    height: 30%;
+}
+
+#gallery > a > .item > .container {
+    font-size: min(3vw, 1.5rem);
+    height: 35%;
+    left: 18%;
+    position: relative;
+    width: 60%;
+}
+
+#gallery > a > .item > .container > * {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+#gallery > a > .item > .container > h4 {
+    color: var(--item-fg);
+    font-weight: 300;
+    font-size: 70%;
+    letter-spacing: 0.1rem;
+}
+
+#gallery > a > .item > .container > p {
+    color: var(--item-fg);
+    font-size: 100%;
+    font-weight: 500;
+}
+
+#gallery > a > .item > .container > button {
+    background-color: var(--item-fg);
+    border: 1px solid var(--border-fg);
+    border-radius: 15px;
+    color: var(--item-bg);
+    cursor: pointer;
+    font-size: 70%;
+    height: 40%;
+    letter-spacing: 0.1rem;
+    transition: 100ms;
+    width: 70%;
 }
 
 
+#gallery > a > .item > .container > button:hover { 
+    background-color: var(--item-fg-fade);
+}
 
 @media screen and (min-width: 800px) {
     h1 {
