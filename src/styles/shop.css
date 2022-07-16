@@ -1,11 +1,7 @@
 #shop {
-    --title-content-bg: #610C63;
-    --main-img-bg: #FFF9D7;
-    --items-content-bg: #810955;
     --item-bg: white;
     --item-fg: black;
     --item-fg-fade: rgba(0, 0, 0, 0.7);
-    --border-fg: #C9B3B3;
     height: fit-content;
 }
 

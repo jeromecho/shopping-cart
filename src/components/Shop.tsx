@@ -3,6 +3,7 @@ import { Footer } from './Footer';
 import { Link } from 'react-router-dom';
 import { Item } from '../App';
 import uniqid from 'uniqid';
+import COOKEDSALMON from '../img/cooked-salmon.png';
 
 export interface ShopProps {
     items: Array<Item>;
