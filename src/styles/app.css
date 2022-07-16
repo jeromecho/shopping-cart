@@ -8,6 +8,7 @@
     --header-bg-fade: rgba(41, 12, 46, 0.8);
     --header-fg: white;
     --items-content-bg: #810955;
+    --items-content-bg-fade: rgba(129, 9, 85, 0.8);
     --main-img-bg: #FFF9D7;
     --title-content-bg: #610C63;
  
@@ -28,6 +29,10 @@ html, body {
     min-height: 100%;
     position: relative;
     width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
 
 #menu {
@@ -181,12 +186,20 @@ header > h2 > a {
 
 header > #cart {
     align-items: center;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    cursor: pointer;
     display: flex;
     height: 3rem;
     margin-left: auto;
     margin-right: 2rem;
     position: relative;
     transition: 300ms;
+}
+
+header > #cart:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
 }
 
 #cart > #cart-count {
@@ -249,6 +262,8 @@ header > #cart {
     position: relative;
 }
 
+
+
 footer {
     align-items: center;
     background-color: var(--header-bg);
@@ -290,6 +305,8 @@ footer > .container > img {
 @import './home.css';
 @import './shop.css';
 @import './item.css';
+@import './shoppingcart.css';
+@import './construction.css';
 
 
 /* Reflection - what did this accomplish? */ 

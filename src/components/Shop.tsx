@@ -3,15 +3,6 @@ import { Footer } from './Footer';
 import { Link } from 'react-router-dom';
 import { Item } from '../App';
 import uniqid from 'uniqid';
-import COOKEDSALMON from '../img/cooked-salmon.png';
-import HARPOONGUN from '../img/harpoon.png';
-import RAWSALMON from '../img/salmon.png';
-import MARTINI from '../img/martini.png';
-import PARSLEY from '../img/parsley.png';
-import SUNOCULARS from '../img/sunoculars.png';
-import LETTUCE from '../img/lettuce.png';
-import CIGARETTES from '../img/cigarettes.png';
-import DARK from '../img/dark.png';
 
 export interface ShopProps {
     items: Array<Item>;

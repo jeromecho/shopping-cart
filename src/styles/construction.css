@@ -1,0 +1,26 @@
+#construction {
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+#construction > * {
+    bottom: 15%;
+    position: relative;
+}
+
+#construction > h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 40rem;
+    width: 80%;
+}
+
+#construction > img {
+    height: 50vw;
+    max-height: 20rem;
+}

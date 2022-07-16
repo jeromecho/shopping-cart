@@ -15,8 +15,7 @@ export function Home(props: HomeProps): ReactElement {
         }}>
             <h1>Ready to be 'In'?</h1>
             <h3>The largest selection on 'In' items in North America</h3>
-            <Link to='/shop'><button>SHOP</button></Link>
-            <p>*All proceeds charitably donated to Esme Squalor</p>
+            <Link to='/shop'>SHOP</Link> <p>*All proceeds charitably donated to Esme Squalor</p>
         </main>
     </>
     );

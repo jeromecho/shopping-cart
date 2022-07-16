@@ -5,21 +5,15 @@ import React from 'react';
 
 export interface ItemProps {
     items: Array<Item>;
+    searchByName: (name: string | undefined) => Item;
+    onBuyClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const ItemPage: React.FunctionComponent<ItemProps> = ({
-    items
+    items,
+    searchByName,
+    onBuyClick
 }) => {
-    function searchByName(name: string | undefined): string {
-        let img = '';
-        items.forEach(item => {
-            if (item.name === name) {
-                img = item.img;
-            }
-        });
-        return img;
-    }
-
     const { name } = useParams();
 
     return ( 
@@ -28,12 +22,14 @@ const ItemPage: React.FunctionComponent<ItemProps> = ({
             <div className='container'> 
                 <h1>{name? name.toUpperCase() : 'Loading name...'}</h1>
                 <div className='container'>
-                    <img src={searchByName(name)} />
+                    <img src={searchByName(name).img} />
                 </div>
             </div>
-            <button>ADD TO BAG</button>
-            <button>BUY IT NOW</button>
-        </main>
+            <div id='buttons-container'>
+                <button onClick={onBuyClick} data-name={name}>ADD TO BAG</button>
+                <button onClick={onBuyClick} data-name={name}>BUY IT NOW</button>
+            </div>
+       </main>
         <Footer />
     </>
 );

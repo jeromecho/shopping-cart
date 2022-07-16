@@ -32,24 +32,25 @@
 }
 
 #home > a {
-    height: 3.5rem;
-    width: 8rem;
-}
-
-#home > a > button {
+    align-items: center;
     border: 2px solid white;
     border-radius: 10px;
+    display: flex;
+    font-size: 1.8rem;
+    font-styling: none;
+    height: 3.5rem;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
-    font-size: 1.8rem;
     height: 3.5rem;
+    justify-content: center;
     letter-spacing: 0.1rem;
+    text-decoration: none;
     transition: 300ms;
     width: 8rem;
 }
 
-#home > a > button:hover {
-    background-color: rgba(0, 0, 0, 1);
+#home > a:hover {
+    background-color: rgba(0,0,0, 1);
 }
 
 #home > p {

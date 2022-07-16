@@ -13,10 +13,14 @@
 }
 
 #item > .container {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     height: 80vw;
-    max-height: 30rem;
-    max-width: 40rem;
-    width: 80vw;
+    max-height: calc(35 * 0.75rem);
+    position: relative;
+    top: 10%;
+    width: fit-content;
 }
 
 #item > .container > h1 {
@@ -31,8 +35,8 @@
     display: flex;
     height: 60vw;
     justify-content: center;
-    max-height: 30rem;
-    max-width: 40rem;
+    max-height: calc(28 * 0.75rem);
+    max-width: 28rem;
     width: 80vw;
 }
 
@@ -40,7 +44,15 @@
     width: 90%;
 }
 
-#item > button {
+#item > #buttons-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    justify-content: center;
+}
+
+#item > #buttons-container > button {
     border-radius: 15px;
     border: 1px solid var(--border-fg);
     color: white;
@@ -51,27 +63,40 @@
     width: 12rem;
 }
 
-#item > button:nth-child(2) {
+#item > #buttons-container > button:nth-child(1) {
     background-color: rgba(0, 0, 0, 0.6);
     margin-bottom: 1.5rem;
     margin-top: 2rem;
 }
 
-#item > button:nth-child(3) {
+#item > #buttons-container > button:nth-child(2) {
     background-color: var(--items-content-bg);
     margin-top: 1.5rem;
 }
 
-/*
+@media screen and (min-width: 800px) {
 
---title-cntent-bg
---main-img-bg
---items-content-bg - light, bright purple 
---header-bg for top button
+    #item {
+        flex-direction: row;
+    }
 
-*/
+    #item > * {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 
+    #item > .container {
+        margin-bottom: 15rem;
+        max-height: calc(45 * 0.75rem);
+        max-width: fit-content;
+        position: relative;
+    }
 
-
+    #item > .container > .container {
+        bottom: 5%;
+        max-height: calc(35 * 0.75rem);
+        max-width: 35rem;
+    }
+}
 
 
