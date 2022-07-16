@@ -1,12 +1,16 @@
 # In Trading - A Shopping Website 
 
-## Comment 
+## Creators-Note
 
-\* Note to self - always write tests beforehand. Writing tests after everything seems to be running fine seems to drain psychological motivation to actually write good tests. 
+This project was inspired by my love for the Series of Unfortunate Events. I first read it in grade 4, and I still love it to this day. Perhaps if you met me one day, stranger, you would find my humour similar to this website and that series I am fond of. 
 
 ## Tech/Skills
 
-TypeScript, Responsive Web Design, Snapshot Testing, React Testing Library, Routing, React Refs
+*TypeScript
+*Responsive Web Design
+*React Testing Library
+*Routing
+*React Refs
 
 ## Challenges 
 
