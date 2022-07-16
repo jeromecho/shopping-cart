@@ -6,11 +6,11 @@ This project was inspired by my love for the Series of Unfortunate Events. I fir
 
 ## Tech/Skills
 
-*TypeScript
-*Responsive Web Design
-*React Testing Library
-*Routing
-*React Refs
+* TypeScript
+* Responsive Web Design
+* React Testing Library
+* Routing
+* React Refs
 
 ## Challenges 
 
