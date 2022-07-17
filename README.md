@@ -8,7 +8,7 @@ A responsive eCommerce sit for phone, iPad, desktop.
 
 ## Pics
 
-!<img width="503" alt="image" src="https://user-images.githubusercontent.com/71617542/179380847-21d726ba-942d-4ba1-b1a9-25e436051b73.png"> !<img width="511" alt="image" src="https://user-images.githubusercontent.com/71617542/179380852-c7c5702f-0b4c-4522-8cf9-0a57e4c4cc77.png"> !<img width="510" alt="image" src="https://user-images.githubusercontent.com/71617542/179380870-6d4da506-319a-4f82-9d4b-ad4b33e4f5ab.png">
+<img width="200" alt="image" src="https://user-images.githubusercontent.com/71617542/179380847-21d726ba-942d-4ba1-b1a9-25e436051b73.png"> <img width="200" alt="image" src="https://user-images.githubusercontent.com/71617542/179380852-c7c5702f-0b4c-4522-8cf9-0a57e4c4cc77.png"> <img width="200" alt="image" src="https://user-images.githubusercontent.com/71617542/179380870-6d4da506-319a-4f82-9d4b-ad4b33e4f5ab.png">
 
 ## Tech/Skills
 
