@@ -25,7 +25,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
 
     return (
         <>
-        <div id='menu' ref={menuRef}>
+        <div id='menu' data-testid='menu' ref={menuRef}>
             <label htmlFor='search' id='search-container'>
                 <input id='search' placeholder={`Search for what's in`} />
             </label>
@@ -52,7 +52,7 @@ const Header: React.FunctionComponent<HeaderProps> = ({
                 <div className='bar' />
             </button>
           <h2><Link to='/'>In</Link></h2>
-          <button id='cart' onClick={onCartClick}>
+          <button data-testid='cart-button' id='cart' onClick={onCartClick}>
               <CartCount count={items.reduce((accum, currItem) => {
                   return accum + currItem.quantity;
               }, 0)}/>

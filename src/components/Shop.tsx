@@ -27,21 +27,21 @@ const Shop: React.FunctionComponent<ShopProps> = ({
                 <div id='filter'>
                     <div className='container'>
                         <button>All Items</button>
-                        <div className='bar' />
+                        <div className='bar' data-testid='bar-1' />
                     </div>
                     <div className='container'>
                         <button>Food</button>
-                        <div className='bar' />
+                        <div className='bar' data-testid='bar-2' />
                     </div>
                     <div className='container'>
                         <button>Weapons</button>
-                        <div className='bar' />
+                        <div className='bar' data-testid='bar-3' />
                     </div>
                 </div>
                 <div id='gallery'>
                     {
                         items.map(item => (
-                            <Link to={`/shop/${item.name}`} key={uniqid()}> 
+                            <Link to={`/shop/${item.name}`} key={uniqid()} data-testid={item.name}> 
                                 <div className='item'>
                                     <img src={item.img} />
                                     <div className='container'>

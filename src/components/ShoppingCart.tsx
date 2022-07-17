@@ -26,7 +26,7 @@ const ShoppingCart = forwardRef<HTMLDivElement, ShoppingCartProps>(({
 
     return (
         <>
-        <div id='shopping-cart' ref={ref}>
+        <div data-testid='shopping-cart' id='shopping-cart' ref={ref}>
             <h1>{!!items.length ?
                 'Your Shopping Bag' :
                 'Your Shopping Bag is Empty'}
@@ -46,13 +46,25 @@ const ShoppingCart = forwardRef<HTMLDivElement, ShoppingCartProps>(({
                                 <p className='cost'>{`$${item.cost} ${item.currency}`}</p>
                             </div>
                            <div className='counter'>
-                               <button className='decrement' data-name={item.name} onClick={onDecrementClick}>
+                               <button 
+                                   className='decrement' 
+                                   data-testid={`${item.name}-decrement`}
+                                   data-name={item.name} 
+                                   onClick={onDecrementClick}
+                               >
                                     -
                                 </button>
                                 <div className='count-display' >
-                                    <p>{item.quantity}</p>
+                                    <p data-testid={`${item.name}-quantity`}>
+                                        {item.quantity}
+                                    </p>
                                 </div>
-                                <button className='increment' data-name={item.name} onClick={onIncrementClick}>
+                                <button 
+                                    className='increment'
+                                    data-name={item.name}
+                                    data-testid={`${item.name}-increment`}
+                                    onClick={onIncrementClick}
+                                >
                                     +
                                 </button>
                             </div>
@@ -64,11 +76,11 @@ const ShoppingCart = forwardRef<HTMLDivElement, ShoppingCartProps>(({
            <hr />
            <div id='total'>
                <h3>TOTAL</h3>
-               <p>{`$${items.reduce((accum, currItem) => (
+               <p data-testid='total'>{`$${items.reduce((accum, currItem) => (
                    accum + currItem.cost * currItem.quantity), 0)} USD`}
                </p>
            </div>
-           <hr />
+           <hr id='bottom-hr'/>
            <button className='checkout'>CHECKOUT</button>
            <button className='back-to-shopping' onClick={onShoppingClick}>BACK TO SHOPPING</button>
        </div>

@@ -27,7 +27,7 @@ it('Click shop button to get to shop page', () => {
             currency: 'USD',
             quantity: 1,
         },
-    ]
+    ];
     render(
         <Router> 
             <Routes>
