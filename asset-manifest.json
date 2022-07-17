@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/shopping-cart-/static/css/main.65b2a035.css",
-    "main.js": "/shopping-cart-/static/js/main.5a9e9e6f.js",
-    "static/media/underconstruction.gif": "/shopping-cart-/static/media/underconstruction.59f99d583064fcf6c72a.gif",
-    "static/media/cooked-salmon.png": "/shopping-cart-/static/media/cooked-salmon.4a71fa635e92bed874a2.png",
-    "static/media/lettuce.png": "/shopping-cart-/static/media/lettuce.5f819f3d5c2db7988e48.png",
-    "static/media/cocktail.png": "/shopping-cart-/static/media/cocktail.4499b12ef3d9e0486880.png",
-    "static/media/salmon.png": "/shopping-cart-/static/media/salmon.f16e1211dc6e031ec667.png",
-    "static/media/parsley.png": "/shopping-cart-/static/media/parsley.9ad0c5f1dfbc3e607f0b.png",
-    "static/media/cigarettes.png": "/shopping-cart-/static/media/cigarettes.01f1fdfc1d23e0e7224d.png",
-    "static/media/sunoculars.png": "/shopping-cart-/static/media/sunoculars.336d68f8e3182b8e3ad9.png",
-    "static/media/dark.png": "/shopping-cart-/static/media/dark.0cc1bc87f32054261123.png",
-    "static/media/shopping-logo.png": "/shopping-cart-/static/media/shopping-logo.2dff82aa8482362b5448.png",
-    "static/media/harpoon.png": "/shopping-cart-/static/media/harpoon.3d6997aea38d623654a7.png",
-    "static/media/martini.png": "/shopping-cart-/static/media/martini.166241e67eb0ddeb5ee0.png",
-    "index.html": "/shopping-cart-/index.html",
-    "main.65b2a035.css.map": "/shopping-cart-/static/css/main.65b2a035.css.map",
-    "main.5a9e9e6f.js.map": "/shopping-cart-/static/js/main.5a9e9e6f.js.map"
+    "main.css": "/shopping-cart/static/css/main.65b2a035.css",
+    "main.js": "/shopping-cart/static/js/main.82d03a29.js",
+    "static/media/underconstruction.gif": "/shopping-cart/static/media/underconstruction.59f99d583064fcf6c72a.gif",
+    "static/media/cooked-salmon.png": "/shopping-cart/static/media/cooked-salmon.4a71fa635e92bed874a2.png",
+    "static/media/lettuce.png": "/shopping-cart/static/media/lettuce.5f819f3d5c2db7988e48.png",
+    "static/media/cocktail.png": "/shopping-cart/static/media/cocktail.4499b12ef3d9e0486880.png",
+    "static/media/salmon.png": "/shopping-cart/static/media/salmon.f16e1211dc6e031ec667.png",
+    "static/media/parsley.png": "/shopping-cart/static/media/parsley.9ad0c5f1dfbc3e607f0b.png",
+    "static/media/cigarettes.png": "/shopping-cart/static/media/cigarettes.01f1fdfc1d23e0e7224d.png",
+    "static/media/sunoculars.png": "/shopping-cart/static/media/sunoculars.336d68f8e3182b8e3ad9.png",
+    "static/media/dark.png": "/shopping-cart/static/media/dark.0cc1bc87f32054261123.png",
+    "static/media/shopping-logo.png": "/shopping-cart/static/media/shopping-logo.2dff82aa8482362b5448.png",
+    "static/media/harpoon.png": "/shopping-cart/static/media/harpoon.3d6997aea38d623654a7.png",
+    "static/media/martini.png": "/shopping-cart/static/media/martini.166241e67eb0ddeb5ee0.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.65b2a035.css.map": "/shopping-cart/static/css/main.65b2a035.css.map",
+    "main.82d03a29.js.map": "/shopping-cart/static/js/main.82d03a29.js.map"
   },
   "entrypoints": [
     "static/css/main.65b2a035.css",
-    "static/js/main.5a9e9e6f.js"
+    "static/js/main.82d03a29.js"
   ]
 }
