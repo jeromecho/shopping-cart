@@ -291,7 +291,7 @@ footer > .container > p {
     margin-right: 0.5rem;
 }
 
-footer > .container > img {
+footer > .container > a > img {
     height: 1.5rem;
     margin-left: 0.5rem;
 }

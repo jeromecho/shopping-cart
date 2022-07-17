@@ -13,7 +13,9 @@ const Footer: React.FunctionComponent<FooterProps> = ({
         <footer>
             <div className='container'>
                 <p>Another great project by Cho Industries</p>
-                <img src={GITHUBLOGO} />
+                <a href='https://www.github.com/jeromecho'>
+                    <img src={GITHUBLOGO} />
+                </a>
             </div>
         </footer>
     );
