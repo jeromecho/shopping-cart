@@ -204,7 +204,7 @@ const App: React.FunctionComponent<AppProps> = () => {
     }
 
     return (
-        <Router>
+        <Router basename='/jeromecho.github.io/shopping-cart-'>
             <Header {...HeaderProps}/>
             <Routes>
                 <Route path='/' element={<Home />} />
