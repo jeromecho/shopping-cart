@@ -1,12 +1,18 @@
 # In Trading - An eCommerce Website For In People
 
+A responsive eCommerce sit for phone, iPad, desktop.
+
 ## Comment 
 
 *This project is inspired by my love of the Series of Unfortunate Events. Fans may understand references.*
 
 ## Tech/Skills
 
-React (learned refs and routing), TypeScript, Responsive Web Design, React Testing Library, Mocks
+* React (learned refs and routing)
+* TypeScript
+* Responsive Web Design 
+* React Testing Library
+* Mocks
 
 ## Challenges 
 
