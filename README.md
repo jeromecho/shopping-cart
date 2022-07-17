@@ -1,6 +1,6 @@
 # In Trading - An eCommerce Website For In People
 
-A responsive eCommerce sit for phone, iPad, desktop.
+A responsive eCommerce sit for phone, iPad, MBP.
 
 ## Comment 
 
@@ -12,6 +12,9 @@ A responsive eCommerce sit for phone, iPad, desktop.
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/71617542/179380964-46126800-d891-44f8-9e2a-ddbbf4d4d252.png">
 
+## Live 
+
+https://jeromecho.github.io/shopping-cart/#/
 
 ## Tech/Skills
 
