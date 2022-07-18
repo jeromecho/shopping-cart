@@ -30,3 +30,5 @@ https://jeromecho.github.io/shopping-cart/#/
 
 2. Mocking versus rendering the whole component - I wanted to make my tests as unit-like as possible. Initially I tried to mock everything possible, but I had to mock a lot of props, as the state was stored in the parent. I realized that it made a lot of sense to mock children sometimes if the state was stored in the parent. Simply rendering the parent lowest in the tree that held the state made my tests a more concise and saved me time in having to mock a bunch of props. My decision-making, however, will need to be sharpened with further projects.
 
+3. Getting refs to update on time - forwarded refs are assigned *after* the first render - a no-go for my client, since i needed the ref to be assigned before the first render for the toggling of my shopping cart to work. I found a hack by forcing a re-render using a hook on the mounting of the component, which gave the effect that my UI worked as needed. 
+
